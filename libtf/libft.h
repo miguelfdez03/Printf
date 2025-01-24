@@ -6,7 +6,7 @@
 /*   By: miguel-f <miguel-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 17:20:14 by miguel-f          #+#    #+#             */
-/*   Updated: 2025/01/17 21:29:03 by miguel-f         ###   ########.fr       */
+/*   Updated: 2025/01/24 13:43:27 by miguel-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_putnbr_base(unsigned long nbr, const char *base);
 int		ft_numlen(int num);
+int		ft_putunbr_fd(unsigned int n, int fd);
+int		ft_putnbr_fd2(int n, int fd);
 #endif

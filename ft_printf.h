@@ -6,7 +6,7 @@
 /*   By: miguel-f <miguel-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 13:28:19 by miguel-f          #+#    #+#             */
-/*   Updated: 2025/01/17 21:40:57 by miguel-f         ###   ########.fr       */
+/*   Updated: 2025/01/24 12:58:16 by miguel-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <stdio.h>
 # include <unistd.h>
 
-// void	ft_putchar_fd(char c, int fd);
-int			ft_printf(const char *format, ...);
+int	ft_printf(const char *format, ...);
+int	select_case(const char *format, va_list args, int *i);
+int	ft_puthex(unsigned int n, char format);
+int	handle_char(va_list args);
+int	handle_string(va_list args);
+int	handle_pointer(va_list args);
 #endif
