@@ -70,3 +70,6 @@ Para cualquier duda o sugerencia, puedes contactarme a través de [mi perfil de 
 ---
 
 ¡Gracias por utilizar esta implementación de `printf`! Espero que te sea de gran ayuda en tus proyectos en C.
+
+Nota: Este repositorio es meramente orientativo. No se debe utilizar para plagiar o copiar y pegar código. En su lugar, debe servir como guía para que puedas implementar tu propia solución al ejercicio.
+
