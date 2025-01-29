@@ -30,7 +30,7 @@ git clone https://github.com/miguelfdez03/Printf.git
 cd Printf
 make
 make test
-./tester_printf
+./test_printf
 ```
 
 ## Uso
