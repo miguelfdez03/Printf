@@ -6,7 +6,7 @@
 /*   By: miguel-f <miguel-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 18:56:40 by miguel-f          #+#    #+#             */
-/*   Updated: 2025/01/24 13:54:28 by miguel-f         ###   ########.fr       */
+/*   Updated: 2025/01/27 18:45:02 by miguel-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,14 @@ int	ft_putnbr_fd2(int n, int fd)
 
 int	ft_putunbr_fd(unsigned int n, int fd)
 {
-	int	count;
+	char	c;
+	int		count;
 
 	count = 0;
-	if (n > 9)
+	if (n >= 10)
 		count += ft_putunbr_fd(n / 10, fd);
-	count += write(fd, &"0123456789"[n % 10], 1);
+	c = '0' + (n % 10);
+	count += write(fd, &c, 1);
 	return (count);
 }
 
